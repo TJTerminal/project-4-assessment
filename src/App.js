@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 
 import CircleSelector from './components/CircleSelector/CircleSelector';
+import Circles from './components/Circles/Circles';
 
 class App extends Component {
   constructor () {
@@ -19,12 +20,13 @@ class App extends Component {
       <div className="App">
         <header className="App-header">UNIT 4 FINAL ASSESSMENT</header>
         <main>
-          YOUR TWO COMPONENTS WILL GO HERE
           <CircleSelector 
             handleButtonClick={this.handleButtonClick}
-
+            selCircleIdx={this.state.selCircleIdx}
           />
-          {/* <Circle /> */}
+          <Circles 
+            selCircleIdx={this.state.selCircleIdx}
+          />
         </main>
       </div>
     );
