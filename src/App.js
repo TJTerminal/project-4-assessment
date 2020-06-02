@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 
+import CircleSelector from './components/CircleSelector/CircleSelector';
+
 class App extends Component {
   render() {
     return (
